@@ -28,6 +28,14 @@ script:
     - cd tests
     - nosetests --with-coverage --cover-package=../bin -d
 
+deploy:
+  provider: heroku
+  api_key: d3acf45f-dd7c-4383-b23e-18658fbeb738
+    secure: KEY
+  app:ail-tfm
+  on:
+    repo: redpanda87/AIL-framework-master
+
 
 after_success:
     - codecov
