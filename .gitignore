@@ -1,0 +1,50 @@
+# Temp files
+*.swp
+*.pyc
+*.swo
+
+# Install Dirs
+AILENV
+redis-leveldb
+redis
+ardb
+faup
+tlsh
+Blooms
+PASTES
+CRAWLED_SCREENSHOT
+BASE64
+HASHS
+DATA_ARDB
+indexdir/
+logs/
+old/
+
+# Webstuff
+var/www/static/
+!var/www/static/css/dygraph_gallery.css
+!var/www/static/js/indexjavascript.js
+!var/www/static/js/moduleTrending.js
+!var/www/static/js/plot-graph.js
+!var/www/static/js/trendingchart.js
+var/www/templates/header.html
+var/www/submitted
+
+# Local config
+bin/packages/config.cfg
+bin/packages/config.cfg.backup
+configs/keys
+configs/update.cfg
+update/current_version
+files
+
+# Pystemon archives
+pystemon/archives
+
+# installed files
+nltk_data/
+doc/all_modules.txt
+# auto generated
+doc/module-data-flow.png
+doc/data-flow.png
+doc/statistics
