@@ -3,7 +3,7 @@ language: python
 python:
     - "3.6"
 
-sudo: false
+sudo: required
 
 cache: pip
 
@@ -13,6 +13,9 @@ env:
       AIL_LEVELDB=$TRAVIS_BUILD_DIR/redis-leveldb/ PATH=$AIL_HOME:$AIL_REDIS:$AIL_LEVELDB:$PATH
 
 dist: xenial
+
+before_install:
+  - chmod +x ./installing_deps.sh
 
 install:
     - ./installing_deps.sh
