@@ -29,7 +29,7 @@ script:
     - nosetests --with-coverage --cover-package=../bin -d
 
 
-before_deploy:
+before_script:
   - chmod +x ./installing_deps.sh
 
 
