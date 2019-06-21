@@ -31,8 +31,8 @@ script:
 
 deploy:
   provider: heroku
-  api_key: d3acf45f-dd7c-4383-b23e-18658fbeb738
-  secure: KEY
+  api_key:
+  secure: d3acf45f-dd7c-4383-b23e-18658fbeb738
   app: ail-tfm
   on:
     repo: redpanda87/AIL-framework-master
