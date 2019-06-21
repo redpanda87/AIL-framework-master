@@ -28,6 +28,11 @@ script:
     - cd tests
     - nosetests --with-coverage --cover-package=../bin -d
 
+
+before_deploy:
+  - chmod +x ./installing_deps.sh
+
+
 deploy:
   provider: heroku
   api_key: d3acf45f-dd7c-4383-b23e-18658fbeb738
