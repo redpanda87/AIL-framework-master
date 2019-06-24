@@ -28,6 +28,9 @@ script:
     - cd tests
     - nosetests --with-coverage --cover-package=../bin -d
 
+before_deploy:
+  - chmod +x ./installing_deps.sh
+
 
 deploy:
   provider: heroku
@@ -35,7 +38,7 @@ deploy:
     secure: d3acf45f-dd7c-4383-b23e-18658fbeb738
   app: ail-tfm
   on:
-    repo: redpanda87/AIL-framework-master
+      repo: redpanda87/AIL-framework-master
 
 
 after_success:
