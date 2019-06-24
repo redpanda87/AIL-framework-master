@@ -29,6 +29,8 @@ script:
     - nosetests --with-coverage --cover-package=../bin -d
 
 before_deploy:
+  - echo here comes deploy
+  - sudo
   - chmod +x ./installing_deps.sh
 
 
