@@ -99,9 +99,10 @@ if [ -z "$VIRTUAL_ENV" ]; then
 
 fi
 
-echo installing 
+
 pushd var/www/
-sudo ./update_thirdparty.sh
+echo INSTALLING *******
+chmod +x ./update_thirdparty.sh
 popd
 
 mkdir -p $AIL_HOME/PASTES
