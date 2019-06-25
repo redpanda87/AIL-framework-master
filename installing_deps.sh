@@ -127,4 +127,4 @@ python3 -m nltk.downloader vader_lexicon
 python3 -m nltk.downloader punkt
 
 #Create the file all_module and update the graph in doc
-$AIL_HOME/doc/generate_modules_data_flow_graph.sh
+chmod +x $AIL_HOME/doc/generate_modules_data_flow_graph.sh
