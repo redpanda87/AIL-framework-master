@@ -12,9 +12,9 @@ signalListener() {
 
 source ./AILENV/bin/activate
 cd bin
-./LAUNCH.sh -l
-./LAUNCH.sh -f
+ chmod +x ./LAUNCH.sh 
+ chmod +x ./LAUNCH.sh -f
 
 signalListener tail -f /dev/null $@
 
-./LAUNCH.sh -k
+ chmod +x ./LAUNCH.sh -k
