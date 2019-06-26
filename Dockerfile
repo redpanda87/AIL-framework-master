@@ -16,7 +16,7 @@ RUN echo "root ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 RUN mkdir /opt/AIL
 ADD . /opt/AIL
 WORKDIR /opt/AIL
-RUN ./installing_deps.sh 
+RUN chmod +x  ./installing_deps.sh 
 WORKDIR /opt/AIL
 
 # Installing Web dependencies,

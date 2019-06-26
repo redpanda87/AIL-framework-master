@@ -9,7 +9,7 @@ GREEN="\\033[1;32m"
 # Make sure the reseting is intentional
 num=$(( ( RANDOM % 100 )  + 1 ))
 
-echo -e $RED"To reset the platform, enter the following number: "$DEFAULT $num 
+echo -e $RED"To reset the platform, enter the following number: "$DEFAULT $num
 read userInput
 
 if [ $userInput -eq $num ]
